@@ -15,8 +15,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     background: linear-gradient(135deg, #6e8efb, #a777e3);
     color: white;
@@ -73,11 +73,11 @@
   /* Desktop Styles (min-width: 1024px) */
   @media (min-width: 1024px) {
     .home-area{
-      margin-bottom: 80px;
+      margin-bottom: 20px;
     }
     .add-form-link {
       bottom: 30px;
-      right: 150px;
+      right: 60px;
     }
   
     .add-form-link a {
