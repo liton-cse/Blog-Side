@@ -51,8 +51,12 @@ const BlogForm = ({ isEditMode, id }) => {
           });
 
           setPreviews({
-            profileImage: blogData.profileImage,
-            blogImages: blogData.images,
+            profileImage: blogData.profileImage
+              ? `https://blog-side-l4or.onrender.com/${blogData.profileImage}`
+              : null,
+            blogImages: blogData.images.map(
+              (img) => `https://blog-side-l4or.onrender.com/${img}`
+            ),
           });
         } catch (err) {
           setError(err.message);
