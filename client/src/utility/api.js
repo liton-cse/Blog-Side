@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:3000/api", // Backend base URL
+  baseURL: "https://blog-side-l4or.onrender.com/api", // Backend base URL
 });
 
 export const createBlog = (data) => API.post("/blog", data);
