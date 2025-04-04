@@ -1,0 +1,97 @@
+/* BlogFilter.css */
+
+/* Mobile-first base styles */
+.filter-container {
+  padding: 1rem;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.filter-item {
+  width: 100%;
+}
+
+.filter-item select,
+.filter-item button {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #E0F7FA;
+  cursor: pointer;
+}
+.filter-item button{
+  background-color: aqua;
+}
+
+.filter-item select:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+}
+
+.reset-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.reset-btn:hover {
+  background-color: #d32f2f;
+}
+
+/* Desktop styles (768px and up) */
+@media (min-width: 768px) {
+  .filter-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .filter-group {
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .left-group {
+    flex: 2;
+    justify-content: flex-start;
+  }
+
+  .right-group {
+    flex: 1;
+    justify-content: flex-end;
+  }
+
+  .filter-item {
+    width: auto;
+    max-width: 150px;
+  }
+
+  .filter-item select,
+  .filter-item button {
+    width: 100%;
+    padding: 0.25rem 1rem;
+  }
+}
+
+/* Larger screens (1024px and up) */
+@media (min-width: 1024px) {
+  .filter-item {
+    max-width: 150px;
+  }
+
+  .filter-group {
+    gap: 2rem;
+  }
+}

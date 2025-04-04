@@ -1,0 +1,120 @@
+/* Mobile Styles (Default) */
+.home-area{
+  margin-bottom: 50px;
+}
+
+.add-form-link {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    z-index: 100;
+  }
+  
+  .add-form-link a {
+    /* Base Button Styles */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(110, 142, 251, 0.3);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    font-weight: 700;
+    padding: 0;
+  }
+  
+  /* Plus Icon - Larger only on mobile */
+  .add-form-link a::before {
+    content: "+";
+    font-weight:700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Text element - hidden on mobile */
+  .add-form-link a span {
+    display: none;
+  }
+  
+  /* Tablet Styles (min-width: 600px) */
+  @media (min-width: 600px) {
+    .home-area{
+      margin-bottom: 50px;
+    }
+    .add-form-link {
+      bottom: 20px;
+      right: 20px;
+    }
+  
+    .add-form-link a {
+      width: auto;
+      height: 40px;
+      padding: 8px 12px 8px 12px;
+      font-size: 12px;
+      border-radius: 20px;
+    }
+  
+    .add-form-link a::before {
+      font-size: 16px; 
+    }
+  
+    /* Show condensed text on tablet */
+    .add-form-link a span {
+      display: inline;
+      padding-left: 8px;
+    }
+  }
+  
+  /* Desktop Styles (min-width: 1024px) */
+  @media (min-width: 1024px) {
+    .home-area{
+      margin-bottom: 80px;
+    }
+    .add-form-link {
+      bottom: 30px;
+      right: 150px;
+    }
+  
+    .add-form-link a {
+      width: auto;
+      height: auto;
+      padding: 12px 18px 12px 18px;
+      font-size: 16px;
+      border-radius: 28px;
+      font-weight: 700;
+    }
+  
+    .add-form-link a::before {
+      position: static;
+      font-size: 20px; 
+      font-weight: 700;
+    }
+  
+    .add-form-link a span {
+      padding-left: 8px;
+    }
+  }
+  
+  /* Hover Effects (All Devices) */
+  .add-form-link a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(110, 142, 251, 0.4);
+    background: linear-gradient(135deg, #a777e3, #6e8efb);
+  }
+  
+  /* Active State */
+  .add-form-link a:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(110, 142, 251, 0.3);
+  }
+  
+  /* Focus Accessibility */
+  .add-form-link a:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(110, 142, 251, 0.5);
+  }
