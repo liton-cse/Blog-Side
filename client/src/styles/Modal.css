@@ -41,6 +41,8 @@
   font-size: 1.5rem;
   margin-bottom: 0.75rem;
   line-height: 1.3;
+  font-weight: bold;
+  color: black;
 }
 
 .detail-categories {

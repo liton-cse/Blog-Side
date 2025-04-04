@@ -56,7 +56,7 @@ function Modal({ blog, onClose }) {
           <img
             src={
               blog.profileImage
-                ? `http://localhost:3000/${blog.profileImage}`
+                ? `https://blog-side-l4or.onrender.com/${blog.profileImage}`
                 : ""
             }
             alt={blog.authorName}
@@ -88,7 +88,7 @@ function Modal({ blog, onClose }) {
               {blog.images.map((img, index) => (
                 <img
                   key={index}
-                  src={`http://localhost:3000/${img}`}
+                  src={`https://blog-side-l4or.onrender.com/${img}`}
                   alt={`Blog content ${index + 1}`}
                   className="detail-image"
                 />
